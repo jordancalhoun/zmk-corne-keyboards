@@ -73,6 +73,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans    &trans      &trans     &trans  &trans
                         &trans  &trans  &trans    &tl 3 SPACE  &trans    &kp DELETE
             >;
+
+            label = "NUM PAD";
         };
 
         media_symbols {
@@ -88,6 +90,8 @@
 &trans  &kp F14   &kp F15  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP    &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
                            &trans      &trans        &trans          &trans     &trans     &trans
             >;
+
+            label = "SYMBOLS";
         };
 
         bluetooth {
@@ -97,6 +101,8 @@
 &trans  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans        &trans        &trans        &trans  &trans  &trans
             >;
+
+            label = "BLE";
         };
     };
 };
