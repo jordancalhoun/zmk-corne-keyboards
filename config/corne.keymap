@@ -59,7 +59,7 @@
                          &kp LEFT_ALT  &kp LEFT_GUI  &tl 1 RETURN    &tl 2 SPACE  &kp BACKSPACE  &kp LA(LC(LEFT_GUI))
             >;
 
-            label = " ";
+            display-name = "Base";
         };
 
         num_arrows {
@@ -76,7 +76,7 @@
                         &trans  &trans  &trans    &tl 3 SPACE  &trans    &kp DELETE
             >;
 
-            label = "NUM PAD";
+            display-name = "Num Pad";
         };
 
         media_symbols {
@@ -93,7 +93,7 @@
                            &trans      &trans        &trans          &trans     &trans     &trans
             >;
 
-            label = "SYMBOLS";
+            display-name = "Symbols";
         };
 
         bluetooth {
@@ -104,7 +104,7 @@
                                     &trans        &trans        &trans        &trans  &trans  &trans
             >;
 
-            label = "BLE";
+            display-name = "Bluetooth";
         };
     };
 };

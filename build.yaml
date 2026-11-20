@@ -18,12 +18,13 @@
 #
 ---
 include:
-  # - board: nice_nano@2.0.0
-  #   shield: corne_left nice_view_adapter nice_view
-  # - board: nice_nano@2.0.0
-  #   shield: corne_right nice_view_adapter nice_view
-  # - board: nice_nano@2.0.0
-  #   shield: settings_reset
+  # Prospector dongle (central)
+  - board: xiao_ble//zmk
+    shield: corne_dongle prospector_adapter
+  - board: xiao_ble//zmk
+    shield: settings_reset
+    artifact-name: settings_reset_dongle
+  # halves (peripherals)
   - board: nice_nano//zmk
     shield: corne_left nice_view_adapter nice_view
   - board: nice_nano//zmk
