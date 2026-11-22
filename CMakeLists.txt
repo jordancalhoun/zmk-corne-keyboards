@@ -1,0 +1,5 @@
+if(CONFIG_CORNE_DONGLE_BACKLIGHT_IDLE)
+  zephyr_library()
+  zephyr_library_include_directories(${APPLICATION_SOURCE_DIR}/include)
+  zephyr_library_sources(src/backlight_idle.c)
+endif()

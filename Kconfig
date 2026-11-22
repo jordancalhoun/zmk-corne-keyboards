@@ -1,0 +1,21 @@
+config CORNE_DONGLE_BACKLIGHT_IDLE
+    bool "Turn the Prospector backlight down when ZMK goes idle"
+    default y
+    depends on SHIELD_PROSPECTOR_ADAPTER && !PROSPECTOR_USE_AMBIENT_LIGHT_SENSOR
+    help
+      The Prospector module only sets the backlight once at boot in fixed
+      brightness mode, so ZMK's display blanking leaves the panel lit. This
+      follows ZMK's activity state instead. The idle delay is
+      CONFIG_ZMK_IDLE_TIMEOUT.
+
+config CORNE_DONGLE_BACKLIGHT_IDLE_BRIGHTNESS
+    int "Backlight brightness while idle"
+    default 0
+    range 0 100
+    depends on CORNE_DONGLE_BACKLIGHT_IDLE
+
+config CORNE_DONGLE_BACKLIGHT_FADE_MS
+    int "Fade duration between active and idle brightness (0 = instant)"
+    default 500
+    range 0 5000
+    depends on CORNE_DONGLE_BACKLIGHT_IDLE
